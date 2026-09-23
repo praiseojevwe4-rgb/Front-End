@@ -1,75 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.css"
+        integrity="sha512-xWIcG98IArXxegzS8Vo9iYMKuPgbXOG8O1mlHrj4MmNFxsBDltGxHJGg4JK80MVEmLRpdbWtphhm+S6Wx9o73g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <style>
-        *{
+        * {
             box-sizing: border-box;
             margin: 0%;
             padding: 0;
         }
 
-        /* img{
-            height: 100vh;
-            object-fit: cover;
-            position: absolute;
-            top: 0;
-            width: 100%; 
-            display:flex;
-        } */
 
-        .header1{
-            background: #224985f2;
-            /* background: #22224a; */
-            z-index: 2000px;
-            height: 45px;
-            position: sticky;
-            top: 0px;
-            color: white;
+        header {
+            background: #001;
             display: flex;
-            align-items: center;
-            padding: 0 20px;
+            justify-content: space-between;
+            padding: 20px;
+            color:#fff
         }
-        
-        .header2{
-            background: #e6e7e8b5;
+        nav{
+            padding: 20px;
+            background:#ffffff89;
             position: sticky;
-            height: 70px;
-            z-index: 8000;
-            top: 45px;
-            /* padding: 20px; */
-            /* opacity: 200px; */
-            /* background: rgb */
-        }
+            top:0;
 
-        .container{
-            margin-top: -70;
-            width: 100%;
         }
+ 
+    
 
-        .container img{
+        .cover {
             width: 100%;
-            height: auto;
+            height:100vh;
+            object-fit: cover;
             display: block;
+            position: absolute;
+            top:0;
+            z-index:-1;
+
         }
     </style>
 </head>
-<body>
-    <header class="header1">
-        
-    </header>
 
-    <header class="header2">
-   <a href="">Home</a>
-   <a href="">Pages</a>
-   <a href="">News</a>
-   <a href="">Elements</a>
-   <a href="">Contac</a>
-   <a href="">Docs</a>
-    <div class="container">
-    <img src="mathias-reding-LTQ517L4cu0-unsplash.jpg" alt="">
-    </div>
+<body>
+
+
+    <header>
+        <div class="contact">
+            <a href=""> <i class="fa-solid fa-map-marker"></i> No 3 Wuse FCT </a>
+            <a href=""> <i class="fa-solid fa-phone"></i> 09087653</a>
+        </div>
+        <div class="contact">
+            <p> Monday - Friday : 08:20 PM </p>
+        </div>
+    </header>
+    <nav>
+        <a href="">Home</a>
+        <a href="">Pages</a>
+        <a href="">News</a>
+        <a href="">Elements</a>
+        <a href="">Contac</a>
+        <a href="">Docs</a>
+    </nav>
+    <main>
+            <img class="cover" src="mathias-reding-LTQ517L4cu0-unsplash.jpg" alt="">
+            <section>
+                <h1> Hello world</h1>
+            </section>
+    </main>
 </body>
+
 </html>
